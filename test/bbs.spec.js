@@ -286,6 +286,7 @@ const DGCProofOfVaccination = {
 describe('DGC Soup to Nuts', function() {
   it('should Sign Pack And Unpack Verify DGCProofOfRecovery', async function() {
     const uri = await signAndPack(DGCProofOfRecovery, mockKeyPair);
+    //console.log('DGCProofOfRecovery', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
@@ -304,6 +305,7 @@ describe('DGC Soup to Nuts', function() {
 
   it('should Sign Pack And Unpack Verify DGCProofCOVIDTest', async function() {
     const uri = await signAndPack(DGCProofOfCovidTest, mockKeyPair);
+    //console.log('DGCProofCOVIDTest', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
@@ -322,6 +324,7 @@ describe('DGC Soup to Nuts', function() {
 
   it('should Sign Pack And Unpack Verify DGCProofOfVaccination', async function() {
     const uri = await signAndPack(DGCProofOfVaccination, mockKeyPair);
+    //console.log('DGCProofOfVaccination', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
