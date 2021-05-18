@@ -1,0 +1,34 @@
+{
+  "name": "bbs-cborld-sdk",
+  "version": "0.0.1",
+  "description": "Verifiable QR SDK for BBS+ Vaccination Credentials with CBOR-LD",
+  "scripts": {
+    "test": "mocha",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "author": "Vitor Pamplona",
+  "license": "GPL",
+  "files": [
+    "lib/*.js"
+  ],
+  "main": "lib/index.js",
+  "module": "lib/main.js",
+  "dependencies": {
+    "@digitalbazaar/cborld": "^4.2.0",
+    "@mattrglobal/jsonld-signatures-bbs": "^0.9.0",
+    "bs58": "4.0.1",
+    "esm": "^3.2.25",
+    "hi-base32": "^0.5.1",
+    "jsonld": "3.1.0",
+    "jsonld-signatures": "5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^4.6.0"
+  }
+}
