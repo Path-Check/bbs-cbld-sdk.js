@@ -182,8 +182,7 @@ const DGCProofOfRecovery = {
     },
     "validFrom": "2021-05-01",
     "validUntil": "2021-10-21"
-  },
-  "evidence": [],
+  }
 }
 
 const DGCProofOfCovidTest = {
@@ -228,8 +227,7 @@ const DGCProofOfCovidTest = {
       "testResultDate": "2021-04-13T14:40:01+00:00",
       "testType": "LP217198-3"
     }
-  },
-  "evidence": [],
+  }
 }
 
 const DGCProofOfVaccination = {
@@ -279,14 +277,12 @@ const DGCProofOfVaccination = {
         "medicinalProductName": "EU/1/20/1528"
       }
     }
-  },
-  "evidence": []
+  }
 }
 
 describe('DGC Soup to Nuts', function() {
   it('should Sign Pack And Unpack Verify DGCProofOfRecovery', async function() {
     const uri = await signAndPack(DGCProofOfRecovery, mockKeyPair);
-    //console.log('DGCProofOfRecovery', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
@@ -305,7 +301,6 @@ describe('DGC Soup to Nuts', function() {
 
   it('should Sign Pack And Unpack Verify DGCProofCOVIDTest', async function() {
     const uri = await signAndPack(DGCProofOfCovidTest, mockKeyPair);
-    //console.log('DGCProofCOVIDTest', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
@@ -324,7 +319,6 @@ describe('DGC Soup to Nuts', function() {
 
   it('should Sign Pack And Unpack Verify DGCProofOfVaccination', async function() {
     const uri = await signAndPack(DGCProofOfVaccination, mockKeyPair);
-    //console.log('DGCProofOfVaccination', uri.length);
     const resultJSON = await unpackAndVerify(uri);
 
     expect(resultJSON.proof).to.not.be.null;
