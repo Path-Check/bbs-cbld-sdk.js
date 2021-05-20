@@ -10,7 +10,6 @@ const TEST_PAYLOAD = {
     "https://w3id.org/pathogen/v1",
     "https://w3id.org/security/bbs/v1"
   ],
-  "id": "http://example.org/credentials/",
   "type": [
     "VerifiableCredential"
   ],
@@ -35,16 +34,15 @@ const TEST_PAYLOAD = {
 };
 
 const SIGNED_TEST_PAYLOAD = {
+  issuer: 'did:web:PCF.PW:1A8',
+  issuanceDate: '2021-05-20T19:33:43.346Z',
+  expirationDate: '2023-05-20T04:00:00.000Z',
   '@context': [
     'https://www.w3.org/2018/credentials/v1',
     'https://w3id.org/pathogen/v1',
     'https://w3id.org/security/bbs/v1'
   ],
-  id: 'http://example.org/credentials/',
   type: [ 'VerifiableCredential' ],
-  expirationDate: '2021-02-05T20:29:37Z',
-  issuer: 'did:example:489398593',
-  issuanceDate: '2021-05-18T18:52:06.304Z',
   credentialSubject: {
     type: 'DGCProofOfCovidTest',
     testInformation: {
@@ -65,10 +63,10 @@ const SIGNED_TEST_PAYLOAD = {
   },
   proof: {
     type: 'BbsBlsSignature2020',
-    created: '2021-05-18T18:52:06Z',
+    created: '2021-05-20T19:33:43Z',
     proofPurpose: 'assertionMethod',
-    proofValue: 'rKKL9TwhrWdpmQRxDgptPQBFp4scxBMDkVll1L1mU8oKZ0LhRirx5dUkMGPyhmMsMm66D09Dc49bkyh8bFLsd4E9UapTEx/CEdQc+rW95XQu9CShuqj1m8hV1yUv09MV7mR2qnISjA8006gQv4wd9w==',
-    verificationMethod: 'did:example:489398593#test'
+    proofValue: 'ktP+YZ3/MnXkb9CQWn873Te0N/nEmDpFBEh69nLc/RnaVCuh6cKs2dFvhsSVEeJ1YSAOyasVSGRCzDJyMoG0SMiYhFqHtC6EHgQipO8gH7wQX7iiqKxTzgYLuji0j6BUW2JQOjB4XtP7m36gw0+g+g==',
+    verificationMethod: 'did:web:PCF.PW:1A8#DEMO'
   }
 };
 
@@ -78,8 +76,6 @@ const mockKeyPair = {
   privateKeyBase58: "5D6Pa8dSwApdnfg7EZR8WnGfvLDCZPZGsZ5Y1ELL9VDj",
   publicKeyBase58: "oqpWYKaZD9M1Kbe94BVXpr8WTdFBNZyKv48cziTiQUeuhm7sBhCABMyYG4kcMrseC68YTFFgyhiNeBKjzdKk9MiRWuLv5H4FFujQsQK2KTAtzU8qTBiZqBHMmnLF4PL7Ytu"
 }
-
-addCache(mockKeyPair);
 
 describe('BBS Crypto', function() {
   it('should sign the package', async function() {
