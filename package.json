@@ -7,7 +7,7 @@
     "webpack": "webpack --config webpack.config.js"
   },
   "author": "Vitor Pamplona",
-  "license": "GPL",
+  "license": "GPL-3.0-only",
   "files": [
     "lib/*.js"
   ],
