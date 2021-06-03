@@ -1,6 +1,6 @@
 {
   "name": "@pathcheck/bbs-cbld-sdk",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Verifiable QR SDK for BBS+ Vaccination Credentials with CBOR-LD",
   "scripts": {
     "test": "mocha",
