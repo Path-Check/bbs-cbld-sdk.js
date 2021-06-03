@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Path-Check/bbs-cborld-sdk.js"
+    "url": "https://github.com/Path-Check/bbs-cbld-sdk.js"
   },
   "bugs": {
-    "url": "https://github.com/Path-Check/bbs-cborld-sdk.js/issues"
+    "url": "https://github.com/Path-Check/bbs-cbld-sdk.js/issues"
   },
   "main": "lib/index.js",
   "module": "lib/main.js",
