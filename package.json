@@ -9,7 +9,8 @@
   "author": "Vitor Pamplona",
   "license": "GPL-3.0-only",
   "files": [
-    "lib/*.js"
+    "lib/**/*.js",
+    "scripts/**/*.js"
   ],
   "repository": {
     "type": "git",
