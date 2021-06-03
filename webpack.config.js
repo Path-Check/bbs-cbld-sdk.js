@@ -5,9 +5,9 @@ module.exports = {
   entry: "./lib/main.js",
   devtool: "source-map",
   output: {
-    filename: 'bbs-cborld.sdk.min.js',
+    filename: 'bbs-cbld-sdk.min.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'BBS_CBORLD',
+    library: 'BBS_CBLD',
     libraryTarget: 'umd',
   },
   optimization: {

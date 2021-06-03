@@ -1,5 +1,5 @@
 {
-  "name": "@pathcheck/bbs-cborld-sdk",
+  "name": "@pathcheck/bbs-cbld-sdk",
   "version": "0.0.6",
   "description": "Verifiable QR SDK for BBS+ Vaccination Credentials with CBOR-LD",
   "scripts": {
@@ -11,6 +11,13 @@
   "files": [
     "lib/*.js"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Path-Check/bbs-cborld-sdk.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Path-Check/bbs-cborld-sdk.js/issues"
+  },
   "main": "lib/index.js",
   "module": "lib/main.js",
   "dependencies": {

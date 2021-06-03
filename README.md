@@ -5,7 +5,7 @@ JavaScript Implementation of W3C Verifiable QR Credentials with BBS+ -> CBOR-LD 
 # Install
 
 ```sh
-npm install divoc.sdk --save
+npm install @pathcheck/cbld-sdk --save
 ```
 
 # Usage
