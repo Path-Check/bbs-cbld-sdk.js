@@ -21,6 +21,7 @@
   },
   "main": "lib/index.js",
   "module": "lib/main.js",
+  "react-native": "lib/main.js",
   "dependencies": {
     "@digitalbazaar/cborld": "^4.2.0",
     "@mattrglobal/jsonld-signatures-bbs": "^0.9.0",
